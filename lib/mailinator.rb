@@ -23,7 +23,7 @@ class Mailinator
   end
 
   def atom_url
-    action_url('atom')
+    action_url('feed')
   end
 
   def widget_url(width = '250', height = '250')
