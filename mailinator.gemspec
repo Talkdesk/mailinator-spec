@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.files         = Dir['lib/**/*']
   s.require_paths = ['lib']
 
-  s.add_dependency 'email_spec'
   s.add_dependency 'mail'
+  s.add_dependency 'email_spec'
 
   s.add_development_dependency 'rspec', '~> 1.3.0'
 end
