@@ -5,7 +5,7 @@ require 'cgi'
 require 'mail'
 
 class Mailinator
-  BASE_URL = 'http://mailinator.com'
+  BASE_URL = 'http://www.mailinator.com'
 
   attr_accessor :email, :name
 
