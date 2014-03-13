@@ -33,14 +33,14 @@ class Mailinator
   def mailbox
     doc = Nokogiri::HTML(open(atom_url))
 
-    doc.css('feed entry').map do |entry|
+    doc.css('item').map do |entry|
       mail = Mail.new
 
       mail.subject = entry.at_css('title').text
-      mail.body = entry.at_css('summary').text
+      mail.body = entry.at_css('description').text
 
       mail.to = @email
-      mail.from = entry.at_css('author name').text
+      mail.from = entry.at_css('creator').text
 
       mail
     end

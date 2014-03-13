@@ -1,5 +1,5 @@
 require 'mailinator'
-require 'email-spec/matchers'
+require 'email_spec/matchers'
 
 class Mailinator
   module Spec
