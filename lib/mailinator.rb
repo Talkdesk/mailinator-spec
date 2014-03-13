@@ -68,7 +68,7 @@ class Mailinator
  private
 
   def action_url(action)
-    URI.parse("#{BASE_URL}/#{action}.jsp?email=#{@name}").to_s
+    URI.parse("#{BASE_URL}/#{action}?to=#{@name}").to_s
   end
 
   def format_email(email)
